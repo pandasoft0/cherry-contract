@@ -10,11 +10,4 @@ module.exports = async (deployer) => {
 
 	// Set original values
 	const instance = await Cherry.deployed();
-	/*
-	await instance.setPurchaseOptions(
-		initialConfig.optionCount,
-		initialConfig.optionValues,
-		initialConfig.optionPrices
-	);
-	*/
 };
