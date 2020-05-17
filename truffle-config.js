@@ -1,13 +1,9 @@
 const fs = require('fs');
 const HDWalletProvider = require('truffle-hdwallet-provider');
 
-//const infura_key = fs.readFileSync(__dirname + "/.infura").toString().trim();
-//const rinkeby_private_key = fs.readFileSync(__dirname + "/.secret.rinkeby.key").toString().trim();
-//const mainnet_private_key = fs.readFileSync(__dirname + "/.secret.mainnet.key").toString().trim();
-
-const infura_key = "";
-const rinkeby_private_key = "";
-const mainnet_private_key = "";
+const infura_key = fs.readFileSync(__dirname + "/.infura").toString().trim();
+const rinkeby_private_key = fs.readFileSync(__dirname + "/.secret.rinkeby.key").toString().trim();
+const mainnet_private_key = fs.readFileSync(__dirname + "/.secret.mainnet.key").toString().trim();
 
 module.exports = {
   networks: {
