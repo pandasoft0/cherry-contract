@@ -77,6 +77,9 @@ async function airdrop() {
 						recipients.push(to_address);
 						amounts.push(web3.utils.toWei(String(amount), "ether"));
 					} else {
+						recipients.push(to_address);
+						amounts.push(web3.utils.toWei(String(amount), "ether"));
+
 						iter++;
 						console.log("On tx " + String(Math.floor(i/MAX_PER_BATCH)) + " of " + String(Math.ceil(airdropJson.length/MAX_PER_BATCH)) + ", Minting to " + recipients);
 						mint(recipients, amounts);

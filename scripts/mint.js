@@ -18,7 +18,7 @@ async function start(){
 
 	let response = await contract.methods.mint(
 		addressTo,
-		web3.utils.toWei(web3.utils.toBN(amount), "ether")
+		web3.utils.toWei(String(amount), "ether")
 	).send({from: owner});
 
 	setup.consoleEvents(response);

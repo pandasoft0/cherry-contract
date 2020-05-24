@@ -23,7 +23,7 @@ module.exports = {
         'https://mainnet.infura.io/v3/' + infura_key
       ),
       gas: 6721975,
-      gasPrice: 10000000000, // 10 gwei
+      gasPrice: 22000000000, // 22 gwei
       network_id: '1'
     },
   },
